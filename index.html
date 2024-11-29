@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería Nataly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3e3e3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4a4a4a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d82b2b;
+        }
+
+        .social-media {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            color: #4a4a4a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-media img {
+            width: 24px; /* Tamaño del ícono */
+            vertical-align: middle; /* Alinear verticalmente */
+            margin-right: 5px; /* Espacio entre el ícono y el texto */
+        }
+
+        .social-media a:hover {
+            color: #333;
+        }
+
+        .gallery {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #4a4a4a;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 0 20px;
+        }
+
+        .gallery-container img, .gallery-container iframe {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-container img:hover, .gallery-container iframe:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #4a4a4a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .gallery h2 {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-circular.png" alt="Logo de Repostería Deliciosa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="menu.html">Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/people/Reposteria-Nataly/61565270273202/?mibextid=ZbWKwL.com">
+            <img src="facebook_icon.png" alt="Logo de Facebook">
+            Facebook
+        </a> 
+    </div>
+
+    <section class="gallery">
+        <h2>Galería de Fotos</h2>
+        <div class="gallery-container">
+            <img src="pastel-1.jpg" alt="Postre 1">
+            <img src="pastel-2.jpg" alt="Postre 2">
+            <img src="pastel-3.jpg" alt="Postre 3">
+            <img src="pastel-4.jpg" alt="Postre 4">
+            <img src="pastel-5.jpg" alt="Postre 5">
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/838393481710825" width="100%" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+        </div>
+    </section>
+
+    <section class="mapa-ubicacion">
+        <center><h2>Nuestra Ubicación</h2></center>
+        <div class="mapa-container">
+           <center> <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.32883355881!2d-104.8951812223973!3d21.533993769320148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737b4ef5e66ad%3A0xabf3dadd070ff805!2sLoma%20Hermosa%2C%2063019%20Tepic%2C%20Nay.!5e0!3m2!1ses-419!2smx!4v1731613365836!5m2!1ses-419!2smx"
+                width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Repostería Nataly. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

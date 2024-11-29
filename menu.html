@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Repostería Nataly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3e3e3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4a4a4a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d82b2b; /* Color de enlace al pasar el mouse */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #000000; /* Color del título actualizado */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff; /* Fondo blanco para las tarjetas */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            border-color: #ffffff; /* Cambio de color en el borde al pasar el mouse */
+        }
+
+        .menu-item h4 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #000000; /* Color del título de las tarjetas actualizado */
+        }
+
+        .menu-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+            text-align: justify;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #4a4a4a; /* Color del pie de página actualizado */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 800px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 500px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-circular.png" alt="Logo de Repostería Deliciosa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="menu.html">Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h2>Menú</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="pastel-matilda.png" alt="Pastel de Chocolate Matilda">
+                    <h4>Pastel de Chocolate Matilda</h4>
+                    <p>El pastel de chocolate Matilda está elaborado con capas de pastel de chocolate ricas y húmedas y cubierto con glaseado de chocolate brillante y rico en sabor a chocolate.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="pastel-pinguino.jpeg" alt="Pastel Pingüinos">
+                    <h4>Pastel Pingüinos</h4>
+                    <p>Delicioso pastel elaborado con pan de chocolate relleno de exquisita crema de chantilly, cubierto con glasé de chocolate amargo y decorado como los clásicos.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="pastel-vainilla.jpeg" alt="Pastel de Vainilla">
+                    <h4>Pastel de Vainilla</h4>
+                    <p>Pan de vainilla casero, de capas relleno de mermelada de fresa. Cubierto de betún de mantequilla.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="pastel-carolta.jpeg" alt="Pastel Carolta Royal">
+                    <h4>Carolta Royal</h4>
+                    <p>Esta carlota royal es un postre sumamente espectacular. Tiene un cremoso interior de zarzamoras hecho a base de crema bavaria y va cubierto con unos ricos rollitos de pan con mermelada. Lo mejor de todo es que tiene una presentación espectacular.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Repostería Nataly. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
